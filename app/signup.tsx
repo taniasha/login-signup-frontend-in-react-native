@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { View, Text, Image } from 'react-native'
 import MyButton from '@/components/MyButton'
 import { useRouter } from 'expo-router'
@@ -28,7 +28,7 @@ export default function Signup() {
         console.log("form",form);
     }
     return (
-        <View style={{flex:1, backgroundColor:"#a5dee5ff"}}>
+        <ScrollView showsVerticalScrollIndicator={false} style={{flex:1, backgroundColor:"#a5dee5ff"}}>
             <Image 
                 source={{uri:'https://i0.wp.com/www.hiptac.org/wp-content/uploads/2020/09/Sign-up.png?resize=1536%2C1536&ssl=1'}}
                 style={{width:360, height:343}}  resizeMode='contain'/>
@@ -47,8 +47,13 @@ export default function Signup() {
 
             <MyButton title={"Register"} onPress={()=> handleSignup() }/>
             <MyButton title={"Home"} onPress={()=> router.navigate("/") }/>
+            <Text>jhghjhjhh</Text>
+                        <Text>jhghjhjhh</Text>
+            <Text>jhghjhjhh</Text>
+            <Text>jhghjhjhh</Text>
+            <Text>jhghjhjhh</Text>
 
-        </View>
+        </ScrollView>
     )
 }
 
