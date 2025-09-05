@@ -7,7 +7,7 @@ export default function Index() {
   const router = useRouter();
 
   return (
-   <View style={{flex:1, backgroundColor:"#8a5485ff", justifyContent:'center', alignItems:'center'}}>
+   <View style={{flex:1, backgroundColor:"#96dae6ff", justifyContent:'center', alignItems:'center'}}>
         <MyButton title={"Continue"} onPress={ ()=>router.navigate("/login") }/>
           {/* if not pass the router.navigate(), like the---- > ()=>router.navigate then it will render without even clicking on button */}
    </View>

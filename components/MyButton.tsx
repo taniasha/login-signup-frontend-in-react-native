@@ -17,12 +17,13 @@ function MyButton({ title, onPress }) {
 
 const styles = StyleSheet.create({
     button:{
-        backgroundColor:'lightblue',
-        paddingVertical:15,
+        backgroundColor:'#b66c6cff',
+        paddingVertical:11,
         borderRadius:10,
         paddingHorizontal:20,
         alignItems:'center',
-        margin:10,
+        marginHorizontal:10,
+        marginVertical:3,
     }
 })
 
